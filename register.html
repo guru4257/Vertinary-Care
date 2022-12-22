@@ -1,0 +1,88 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;   
+}  
+.container {  
+    padding: 50px;   
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 50%%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {   
+  color: black;
+  background-color: lightgreen;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body> 
+ <style>
+body {
+  background-image: url('animal8.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style> 
+  
+  
+  <div class="container">  
+  <center>  <h1> Registeration Form</h1> </center> 
+  <form form action="connect.php" method="POST"> 
+  <hr>  
+  <h1 style="font-family:Garamond; color:black;">Fistname:</h1>   
+  <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+  <h1 style="font-family:Garamond; color:black;">Lastname:</h1>   
+  <input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+  <div>  
+  <label>      
+  <h1 style="font-family:Garamond; color:black;">gender:</h1> 
+  </label><br>  
+  <input type="radio" value="M" name="gender" checked > Male   
+  <input type="radio" value="F" name="gender"> Female     
+  
+  </div>  
+  <label>   
+  <h1 style="font-family:Garamond; color:black;">Phone:</h1>  
+  </label>  
+  <input type="text" name="countrycode" placeholder="Country Code"  value="+91" size="2"/>   
+  <input type="text" name="phone" placeholder="phone no." size="10"/ required>     
+  <h1 style="font-family:Garamond; color:black;">Email:</h1>  
+  <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <h1 style="font-family:Garamond; color:black;">Password:</h1> 
+    <input type="password" placeholder="Enter Password" name="password" required>    
+    <h1 style="font-family:Garamond; color:black;">Retype password:</h1> 
+    <input type="password" placeholder="Enter Password" name="retypepassword" required>
+    <button type="submit" class="registerbtn">Register</button>
+  </form>
+</form>  
+</body>  
+</html>
